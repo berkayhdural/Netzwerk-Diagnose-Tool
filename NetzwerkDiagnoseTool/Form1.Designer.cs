@@ -34,6 +34,7 @@
             this.btnPing = new System.Windows.Forms.Button();
             this.btnSysInfo = new System.Windows.Forms.Button();
             this.rtbOutput = new System.Windows.Forms.RichTextBox();
+            this.btnTrace = new System.Windows.Forms.Button();
             this.pnlHeader.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,6 @@
             this.lblTitle.Size = new System.Drawing.Size(188, 26);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "NETWORK TOOL";
-            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // txtHost
             // 
@@ -65,7 +65,7 @@
             // 
             // btnPing
             // 
-            this.btnPing.Location = new System.Drawing.Point(445, 144);
+            this.btnPing.Location = new System.Drawing.Point(489, 143);
             this.btnPing.Name = "btnPing";
             this.btnPing.Size = new System.Drawing.Size(75, 23);
             this.btnPing.TabIndex = 2;
@@ -75,7 +75,7 @@
             // 
             // btnSysInfo
             // 
-            this.btnSysInfo.Location = new System.Drawing.Point(301, 144);
+            this.btnSysInfo.Location = new System.Drawing.Point(275, 143);
             this.btnSysInfo.Name = "btnSysInfo";
             this.btnSysInfo.Size = new System.Drawing.Size(75, 23);
             this.btnSysInfo.TabIndex = 3;
@@ -87,13 +87,24 @@
             // 
             this.rtbOutput.Location = new System.Drawing.Point(169, 216);
             this.rtbOutput.Name = "rtbOutput";
-            this.rtbOutput.Size = new System.Drawing.Size(554, 96);
+            this.rtbOutput.Size = new System.Drawing.Size(526, 180);
             this.rtbOutput.TabIndex = 4;
             this.rtbOutput.Text = "";
             // 
+            // btnTrace
+            // 
+            this.btnTrace.Location = new System.Drawing.Point(380, 143);
+            this.btnTrace.Name = "btnTrace";
+            this.btnTrace.Size = new System.Drawing.Size(75, 23);
+            this.btnTrace.TabIndex = 5;
+            this.btnTrace.Text = "TRACE";
+            this.btnTrace.UseVisualStyleBackColor = true;
+            this.btnTrace.Click += new System.EventHandler(this.btnTrace_Click);
+            // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(813, 341);
+            this.ClientSize = new System.Drawing.Size(846, 459);
+            this.Controls.Add(this.btnTrace);
             this.Controls.Add(this.rtbOutput);
             this.Controls.Add(this.btnSysInfo);
             this.Controls.Add(this.btnPing);
@@ -115,6 +126,7 @@
         private System.Windows.Forms.Button btnPing;
         private System.Windows.Forms.Button btnSysInfo;
         private System.Windows.Forms.RichTextBox rtbOutput;
+        private System.Windows.Forms.Button btnTrace;
     }
 }
 
